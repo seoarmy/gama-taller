@@ -14,7 +14,12 @@ export default function SEO({ title, description, path = '/', jsonLd }) {
       <meta property="og:type" content="website" />
       <meta property="og:url" content={canonical} />
       <meta property="og:site_name" content={siteConfig.name} />
+      <meta property="og:locale" content="es_AR" />
       <meta name="twitter:card" content="summary_large_image" />
+      <meta name="geo.region" content="AR-C" />
+      <meta name="geo.placename" content="Buenos Aires" />
+      <meta name="geo.position" content={`${siteConfig.address.lat};${siteConfig.address.lng}`} />
+      <meta name="ICBM" content={`${siteConfig.address.lat}, ${siteConfig.address.lng}`} />
       {schemas.map((schema, i) => (
         <script key={i} type="application/ld+json">
           {JSON.stringify(schema)}

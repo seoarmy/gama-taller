@@ -36,7 +36,7 @@ export default function Reviews() {
   return (
     <>
       <SEO
-        title="Opiniones de Clientes | GAMA Taller Integral"
+        title="Opiniones de Clientes | GAMA Taller Integral Buenos Aires"
         description="Reseñas reales de Google de clientes que repararon su auto en GAMA Taller Integral: chapa y pintura, siniestros y gestión de seguros en Buenos Aires."
         path="/opiniones"
         jsonLd={jsonLd}
