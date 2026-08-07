@@ -2,7 +2,7 @@
 export const workGallery = [
   {
     src: 'https://images.unsplash.com/photo-1632823469850-1b7b1e8b7e6f?auto=format&fit=crop&w=1200&q=80',
-    alt: 'Paragolpe reparado y pintado al horno',
+    alt: 'Paragolpe reparado y pintado en cabina presurizada',
     tag: 'Chapa y Pintura',
   },
   {
@@ -21,9 +21,9 @@ export const workGallery = [
     tag: 'Electricidad',
   },
   {
-    src: 'https://images.unsplash.com/photo-1567789884554-0b844b597180?auto=format&fit=crop&w=1200&q=80',
-    alt: 'Cambio y balanceo de neumáticos',
-    tag: 'Gomería',
+    src: 'https://images.unsplash.com/photo-1621361365424-06f0e1eb0940?auto=format&fit=crop&w=1200&q=80',
+    alt: 'Programación de llave con chip para automóvil',
+    tag: 'Cerrajería Vehicular',
   },
   {
     src: 'https://images.unsplash.com/photo-1616455579100-2ceaa4eb2d37?auto=format&fit=crop&w=1200&q=80',
@@ -37,7 +37,7 @@ export const workGallery = [
   },
   {
     src: 'https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?auto=format&fit=crop&w=1200&q=80',
-    alt: 'Vehículo con pintura al horno finalizada',
+    alt: 'Vehículo con pintura en cabina presurizada finalizada',
     tag: 'Chapa y Pintura',
   },
   {

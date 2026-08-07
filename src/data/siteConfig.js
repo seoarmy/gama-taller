@@ -5,6 +5,7 @@ export const siteConfig = {
   phoneDisplay: '+54 9 11 3698-0603',
   whatsappNumber: '5491136980603',
   email: 'contacto@gamatallerintegral.com.ar', // TODO: email real del cliente
+  insuranceEmail: 'seguros@gamatallerintegral.com.ar', // TODO: email real de gestión de seguros
   instagram: '@gamacentrointegraldelautomovil',
   instagramUrl: 'https://instagram.com/gamacentrointegraldelautomovil',
   address: {

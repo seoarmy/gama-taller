@@ -5,14 +5,14 @@ export const services = [
     order: '01',
     icon: 'SprayCan',
     title: 'Chapa y Pintura',
-    shortDesc: 'Reparación de carrocería y pintura al horno con acabado de fábrica.',
+    shortDesc: 'Reparación de carrocería y pintura en cabina presurizada con acabado de fábrica.',
     metaTitle: 'Chapa y Pintura en Buenos Aires | GAMA Taller Integral',
     metaDescription:
-      'Reparación de chapa y pintura al horno en Buenos Aires. Igualación de color por espectrofotómetro y trabajo con todas las aseguradoras. Presupuesto sin cargo.',
+      'Reparación de chapa y pintura en cabina presurizada en Buenos Aires. Igualación de color por espectrofotómetro y trabajo con todas las aseguradoras. Presupuesto sin cargo.',
     heroImage:
       'https://images.unsplash.com/photo-1632823469850-1b7b1e8b7e6f?auto=format&fit=crop&w=1600&q=80',
     intro:
-      'En nuestro sector de chapa y pintura trabajamos con cabina de pintado al horno y bancada de enderezado por medición láser, lo que nos permite devolver la geometría original del chasis antes de aplicar cualquier pintura. No tapamos golpes: los corregimos desde la estructura.',
+      'En nuestro sector de chapa y pintura trabajamos con cabina de pintado presurizada y bancada de enderezado por medición láser, lo que nos permite devolver la geometría original del chasis antes de aplicar cualquier pintura. No tapamos golpes: los corregimos desde la estructura.',
     process: [
       {
         title: 'Diagnóstico y medición de chasis',
@@ -27,8 +27,8 @@ export const services = [
         desc: 'Medimos el color original de fábrica de tu auto para que el sector pintado sea indistinguible del resto de la carrocería.',
       },
       {
-        title: 'Horneado y pulido final',
-        desc: 'Curado en cabina a temperatura controlada y pulido de terminación antes de la entrega.',
+        title: 'Curado en cabina y pulido final',
+        desc: 'Curado en cabina presurizada a temperatura controlada y pulido de terminación antes de la entrega.',
       },
     ],
     localSeo:
@@ -59,14 +59,14 @@ export const services = [
     order: '02',
     icon: 'Wrench',
     title: 'Mecánica General',
-    shortDesc: 'Diagnóstico computarizado, service y reparación de motor y tren delantero.',
+    shortDesc: 'Diagnóstico computarizado, lubricentro, service y reparación de motor y tren delantero.',
     metaTitle: 'Mecánica General en Buenos Aires | GAMA Taller Integral',
     metaDescription:
-      'Taller de mecánica general en Buenos Aires: diagnóstico computarizado, service, distribución, frenos y tren delantero. Presupuesto sin cargo en Marcos Sastre 4474.',
+      'Taller de mecánica general en Buenos Aires: diagnóstico computarizado, lubricentro, service, distribución, frenos y tren delantero. Presupuesto sin cargo en Marcos Sastre 4474.',
     heroImage:
       'https://images.unsplash.com/photo-1487754180451-c456f719a1fc?auto=format&fit=crop&w=1600&q=80',
     intro:
-      'El sector de mecánica general de GAMA trabaja con escáner multimarca para leer las centralitas de motor, ABS y airbag antes de tocar una sola pieza. Así evitamos cambiar componentes que funcionan bien y vamos directo a la causa del problema.',
+      'El sector de mecánica general de GAMA trabaja con escáner multimarca para leer las centralitas de motor, ABS y airbag antes de tocar una sola pieza. Así evitamos cambiar componentes que funcionan bien y vamos directo a la causa del problema. También contamos con lubricentro propio para cambio de aceite y filtros según el kilometraje de cada vehículo.',
     process: [
       {
         title: 'Escaneo de fallas con equipo multimarca',
@@ -89,11 +89,16 @@ export const services = [
       'Recibimos vehículos para service y mecánica general de clientes de toda la Ciudad de Buenos Aires, con turno previo o de manera espontánea según disponibilidad del taller.',
     benefits: [
       'Escáner multimarca para motor, ABS y airbag',
+      'Lubricentro propio: cambio de aceite y filtros',
       'Presupuesto detallado antes de iniciar cualquier trabajo',
       'Repuestos originales u homologados a elección del cliente',
       'Prueba de ruta post-reparación',
     ],
     faq: [
+      {
+        q: '¿Hacen cambio de aceite sin turno previo?',
+        a: 'Sí, el lubricentro atiende de forma espontánea según disponibilidad del taller; para coordinar horario preferencial recomendamos avisar por WhatsApp.',
+      },
       {
         q: '¿Necesito sacar turno para un service?',
         a: 'Para service programado recomendamos coordinar turno previo por WhatsApp; para urgencias evaluamos disponibilidad del día.',
@@ -271,56 +276,56 @@ export const services = [
     ],
   },
   {
-    slug: 'gomeria',
+    slug: 'cerrajeria-vehicular',
     order: '06',
-    icon: 'Disc3',
-    title: 'Gomería',
-    shortDesc: 'Cambio, reparación y balanceo de neumáticos con equipo computarizado.',
-    metaTitle: 'Gomería en Buenos Aires | GAMA Taller Integral',
+    icon: 'KeyRound',
+    title: 'Cerrajería Vehicular',
+    shortDesc: 'Apertura sin daño, copiado y programación de llaves con y sin chip.',
+    metaTitle: 'Cerrajería Vehicular en Buenos Aires | GAMA Taller Integral',
     metaDescription:
-      'Gomería en Buenos Aires: cambio de neumáticos, reparación de pinchaduras y balanceo computarizado. Taller GAMA, Marcos Sastre 4474, CABA.',
+      'Cerrajería vehicular en Buenos Aires: apertura de autos sin llave, duplicado y programación de llaves con chip y control remoto. Taller GAMA, Marcos Sastre 4474.',
     heroImage:
-      'https://images.unsplash.com/photo-1567789884554-0b844b597180?auto=format&fit=crop&w=1600&q=80',
+      'https://images.unsplash.com/photo-1621361365424-06f0e1eb0940?auto=format&fit=crop&w=1600&q=80',
     intro:
-      'Revisamos el desgaste de la cubierta antes de recomendar un cambio: en muchos casos una pinchadura se repara de forma segura y en otros el desgaste irregular indica un problema de alineación que conviene resolver antes de invertir en neumáticos nuevos.',
+      'Trabajamos con equipo de programación multimarca para copiar y activar llaves con chip transponder, sin necesidad de pasar por el concesionario. También resolvemos aperturas de emergencia sin dañar cerradura ni burlete, y extracción de llaves rotas dentro del bombín.',
     process: [
       {
-        title: 'Inspección del patrón de desgaste',
-        desc: 'Miramos si el desgaste es parejo o irregular, lo que indica si el problema es solo la cubierta o hay un tema de alineación de fondo.',
+        title: 'Relevamiento del caso',
+        desc: 'Identificamos si se trata de una apertura de emergencia, copiado de llave, pérdida total de llaves o falla de telemando.',
       },
       {
-        title: 'Reparación o reemplazo según corresponda',
-        desc: 'Si la pinchadura está en zona reparable, la solucionamos con parche interno. Si no, coordinamos el cambio según el uso del vehículo.',
+        title: 'Apertura o extracción sin daño',
+        desc: 'Usamos herramientas de cerrajería automotriz para abrir la puerta o extraer una llave rota sin dañar chapa, cerradura ni burlete.',
       },
       {
-        title: 'Balanceo computarizado de las cuatro ruedas',
-        desc: 'Balanceamos con equipo computarizado para eliminar vibraciones en el volante a alta velocidad.',
+        title: 'Copiado o programación de llave con chip',
+        desc: 'Duplicamos la llave física y programamos el chip transponder y el control remoto con equipo multimarca.',
       },
       {
-        title: 'Control de presión y torque de tuercas',
-        desc: 'Ajustamos presión según especificación de fábrica y verificamos torque de tuercas con llave calibrada.',
+        title: 'Prueba de arranque y cierre centralizado',
+        desc: 'Confirmamos que la llave nueva arranca el motor y que el control remoto abre y cierra correctamente antes de la entrega.',
       },
     ],
     localSeo:
-      'Servicio de gomería para clientes de toda Buenos Aires que combinan el cambio de neumáticos con alineación y balanceo en la misma visita, sin necesidad de otro turno.',
+      'Atendemos aperturas de emergencia y copiado de llaves de autos de toda la Ciudad Autónoma de Buenos Aires, tanto en el taller de Marcos Sastre 4474 como a domicilio según el caso.',
     benefits: [
-      'Reparación de pinchaduras cuando es seguro hacerlo',
-      'Balanceo computarizado de las cuatro ruedas',
-      'Control de torque con llave calibrada',
-      'Recomendación honesta: reparar vs. cambiar',
+      'Apertura de emergencia sin dañar cerradura ni burlete',
+      'Programación de llaves con chip sin pasar por el concesionario',
+      'Extracción de llaves rotas dentro del bombín',
+      'Duplicado de control remoto y telemando',
     ],
     faq: [
       {
-        q: '¿Toda pinchadura se puede reparar?',
-        a: 'No. Depende de la ubicación y el tamaño del daño en la banda de rodamiento. Si la pinchadura está en la zona lateral o es muy grande, recomendamos el cambio por seguridad.',
+        q: '¿Pueden hacer una llave nueva si perdí todas las originales?',
+        a: 'Sí, en la mayoría de los modelos podemos generar una llave nueva con chip y programarla directo en el vehículo, sin depender del concesionario.',
       },
       {
-        q: '¿Hacen balanceo si compro los neumáticos en otro lado?',
-        a: 'Sí, balanceamos neumáticos aunque no los hayamos vendido nosotros.',
+        q: '¿La apertura de emergencia daña la cerradura o el auto?',
+        a: 'No. Usamos herramientas específicas de cerrajería automotriz pensadas para no forzar ni dañar chapa, burlete ni mecanismo de cierre.',
       },
       {
-        q: '¿Cada cuánto conviene rotar los neumáticos?',
-        a: 'En general cada 10.000 km, pero te lo confirmamos según el patrón de desgaste que veamos en la inspección.',
+        q: '¿Reparan control remoto que dejó de andar?',
+        a: 'Sí, revisamos si el problema es la batería, la placa del control o la programación, y resolvemos según el diagnóstico.',
       },
     ],
   },
@@ -356,7 +361,7 @@ export const services = [
       },
     ],
     localSeo:
-      'Muchos clientes de Buenos Aires llegan a alineación y balanceo derivados de nuestro propio sector de gomería o después de una reparación de suspensión, sin salir del taller de Marcos Sastre 4474.',
+      'Muchos clientes de Buenos Aires llegan a alineación y balanceo después de una reparación de suspensión o un cambio de neumáticos, sin salir del taller de Marcos Sastre 4474.',
     benefits: [
       'Alineadora 3D contra valor exacto de fábrica',
       'Corrección de tiro al volante y desgaste irregular',

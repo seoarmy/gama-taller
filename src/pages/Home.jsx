@@ -4,15 +4,17 @@ import {
   Wrench,
   SprayCan,
   Zap,
-  Disc3,
+  KeyRound,
   ShieldCheck,
   CalendarClock,
   CheckCircle2,
   Navigation2,
+  Mail,
 } from 'lucide-react'
 import WhatsAppIcon from '../components/icons/WhatsAppIcon'
 import SEO from '../components/SEO'
 import Reveal from '../components/Reveal'
+import InsurersCarousel from '../components/InsurersCarousel'
 import SectionBadge from '../components/SectionBadge'
 import ServiceCard from '../components/ServiceCard'
 import Gallery from '../components/Gallery'
@@ -31,7 +33,7 @@ const quickIcons = [
   { icon: Wrench, label: 'Mecánica' },
   { icon: SprayCan, label: 'Chapa y Pintura' },
   { icon: Zap, label: 'Electricidad' },
-  { icon: Disc3, label: 'Gomería' },
+  { icon: KeyRound, label: 'Cerrajería' },
   { icon: ShieldCheck, label: 'Seguros' },
   { icon: CalendarClock, label: 'Turnos' },
 ]
@@ -39,7 +41,7 @@ const quickIcons = [
 const gallery1 = [
   { src: 'https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=800&q=80', alt: 'Auto reparado listo para entrega' },
   { src: 'https://images.unsplash.com/photo-1632823469850-1b7b1e8b7e6f?auto=format&fit=crop&w=800&q=80', alt: 'Trabajo de chapa y pintura terminado' },
-  { src: 'https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?auto=format&fit=crop&w=800&q=80', alt: 'Vehículo con pintura al horno finalizada' },
+  { src: 'https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?auto=format&fit=crop&w=800&q=80', alt: 'Vehículo con pintura en cabina presurizada finalizada' },
   { src: 'https://images.unsplash.com/photo-1583121274602-3e2820c69888?auto=format&fit=crop&w=800&q=80', alt: 'Auto entregado al cliente' },
 ]
 
@@ -111,7 +113,7 @@ export default function Home() {
     <>
       <SEO
         title="GAMA Taller Integral | Taller Mecánico y Chapa y Pintura en Buenos Aires"
-        description="Taller mecánico integral en Buenos Aires: chapa y pintura, mecánica general, electricidad, gomería y gestión completa de siniestros con tu aseguradora. Presupuesto sin cargo."
+        description="Taller mecánico integral en Buenos Aires: chapa y pintura, mecánica general, electricidad, cerrajería vehicular y gestión completa de siniestros con tu aseguradora. Presupuesto sin cargo."
         path="/"
         jsonLd={[jsonLd, faqJsonLd]}
       />
@@ -173,37 +175,47 @@ export default function Home() {
       </section>
 
       {/* ALERT CARD */}
-      <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
+      <section className="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
         <Reveal>
           <div className="relative overflow-hidden rounded-3xl border border-brand-silver-light">
-            <div className="grid lg:grid-cols-2">
-              <div className="relative min-h-[260px]">
+            <div className="grid grid-cols-2">
+              <div className="relative h-28 sm:h-40 md:h-48">
                 {/* TODO: reemplazar con foto real de daño / granizo del cliente */}
                 <img
                   src="https://images.unsplash.com/photo-1620891549027-942fdc95d3f5?auto=format&fit=crop&w=1000&q=80"
                   alt="Vehículo con daño de chapa por granizo"
-                  className="h-full w-full object-cover"
+                  className="absolute inset-0 h-full w-full object-cover"
                 />
               </div>
-              <div className="flex flex-col justify-center bg-brand-dark p-8 text-white sm:p-12">
-                <span className="inline-flex w-fit items-center gap-2 rounded-full bg-amber-400/15 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-amber-300">
+              <div className="flex flex-col justify-center bg-brand-dark p-3 text-white sm:p-7">
+                <span className="inline-flex w-fit items-center gap-2 rounded-full bg-amber-400/15 px-2 py-1 text-[10px] font-semibold uppercase tracking-wide text-amber-300 sm:px-3 sm:text-xs">
                   <ShieldAlert size={14} /> Atención
                 </span>
-                <h2 className="mt-4 text-2xl font-bold sm:text-3xl">
+                <h2 className="mt-2 text-sm font-bold sm:mt-3 sm:text-2xl">
                   ¿Tu auto tuvo un choque, granizo o un siniestro?
                 </h2>
-                <p className="mt-3 text-sm text-white/70 sm:text-base">
+                <p className="mt-1.5 text-xs text-white/70 sm:mt-2 sm:text-sm">
                   Nos ocupamos de todo el proceso: desde la reparación hasta el trámite con tu aseguradora. Vos no tenés que lidiar con nada.
                 </p>
                 <a
                   href="/seguros"
-                  className="mt-6 flex w-fit items-center gap-2 rounded-full bg-brand-blue px-5 py-3 text-sm font-semibold text-white hover:bg-brand-blue-light"
+                  className="mt-2.5 flex w-fit items-center gap-1.5 rounded-full bg-brand-blue px-3 py-1.5 text-xs font-semibold text-white hover:bg-brand-blue-light sm:mt-4 sm:gap-2 sm:px-5 sm:py-2.5 sm:text-sm"
                 >
                   Quiero que se ocupen de todo
                 </a>
               </div>
             </div>
           </div>
+        </Reveal>
+      </section>
+
+      {/* INSURERS CAROUSEL */}
+      <section className="mx-auto max-w-7xl px-4 pb-10 sm:px-6 lg:px-8">
+        <Reveal>
+          <p className="mb-4 text-center text-xs font-semibold uppercase tracking-wide text-brand-ink-soft">
+            Trabajamos con todas las aseguradoras
+          </p>
+          <InsurersCarousel />
         </Reveal>
       </section>
 
@@ -227,55 +239,6 @@ export default function Home() {
             ))}
           </div>
         </div>
-      </section>
-
-      {/* NUESTROS TRABAJOS */}
-      <section className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
-        <Reveal className="mx-auto mb-10 max-w-2xl text-center">
-          <SectionBadge>Nuestros trabajos</SectionBadge>
-          <h2 className="mt-4 text-3xl font-extrabold text-brand-ink sm:text-4xl">
-            Reparaciones reales, en todos nuestros servicios
-          </h2>
-        </Reveal>
-        <WorkCarousel images={workGallery} />
-      </section>
-
-      {/* ABOUT GAMA */}
-      <section className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
-        <div className="grid items-center gap-12 lg:grid-cols-2">
-          <Reveal>
-            <div className="overflow-hidden rounded-3xl border border-brand-silver-light">
-              {/* TODO: reemplazar con foto real del cliente */}
-              <img
-                src="https://images.unsplash.com/photo-1530046339160-ce3e530c7d2f?auto=format&fit=crop&w=1000&q=80"
-                alt="Mecánico trabajando en el taller GAMA"
-                className="h-full w-full object-cover"
-              />
-            </div>
-          </Reveal>
-          <Reveal delay={0.1}>
-            <SectionBadge>Conocé GAMA</SectionBadge>
-            <h2 className="mt-4 text-3xl font-extrabold text-brand-ink sm:text-4xl">
-              Centro integral con equipo y trato personalizado
-            </h2>
-            <p className="mt-4 text-brand-ink/60">
-              En GAMA Taller Integral combinamos equipamiento moderno —diagnóstico computarizado, cabina de pintura al horno, alineadora 3D— con seguimiento cercano de cada vehículo que entra al taller. Cada trabajo se sigue de punta a punta con el mismo asesor.
-            </p>
-            <a
-              href={buildWhatsappLink(whatsappMessages.asesor)}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-6 inline-flex items-center gap-2 rounded-full bg-brand-blue px-6 py-3 text-sm font-semibold text-white hover:bg-brand-blue-light"
-            >
-              Hablar con un asesor
-            </a>
-          </Reveal>
-        </div>
-      </section>
-
-      {/* GALLERY 1 */}
-      <section className="mx-auto max-w-7xl px-4 pb-20 sm:px-6 lg:px-8">
-        <Gallery images={gallery1} />
       </section>
 
       {/* INSURANCE */}
@@ -319,6 +282,55 @@ export default function Home() {
             </div>
           </Reveal>
         </div>
+      </section>
+
+      {/* NUESTROS TRABAJOS */}
+      <section className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
+        <Reveal className="mx-auto mb-10 max-w-2xl text-center">
+          <SectionBadge>Nuestros trabajos</SectionBadge>
+          <h2 className="mt-4 text-3xl font-extrabold text-brand-ink sm:text-4xl">
+            Reparaciones reales, en todos nuestros servicios
+          </h2>
+        </Reveal>
+        <WorkCarousel images={workGallery} />
+      </section>
+
+      {/* ABOUT GAMA */}
+      <section className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
+        <div className="grid items-center gap-12 lg:grid-cols-2">
+          <Reveal>
+            <div className="overflow-hidden rounded-3xl border border-brand-silver-light">
+              {/* TODO: reemplazar con foto real del cliente */}
+              <img
+                src="https://images.unsplash.com/photo-1530046339160-ce3e530c7d2f?auto=format&fit=crop&w=1000&q=80"
+                alt="Mecánico trabajando en el taller GAMA"
+                className="h-full w-full object-cover"
+              />
+            </div>
+          </Reveal>
+          <Reveal delay={0.1}>
+            <SectionBadge>Conocé GAMA</SectionBadge>
+            <h2 className="mt-4 text-3xl font-extrabold text-brand-ink sm:text-4xl">
+              Centro integral con equipo y trato personalizado
+            </h2>
+            <p className="mt-4 text-brand-ink/60">
+              En GAMA Taller Integral combinamos equipamiento moderno —diagnóstico computarizado, cabina de pintura presurizada, alineadora 3D— con seguimiento cercano de cada vehículo que entra al taller. Cada trabajo se sigue de punta a punta con el mismo asesor.
+            </p>
+            <a
+              href={buildWhatsappLink(whatsappMessages.asesor)}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-6 inline-flex items-center gap-2 rounded-full bg-brand-blue px-6 py-3 text-sm font-semibold text-white hover:bg-brand-blue-light"
+            >
+              Hablar con un asesor
+            </a>
+          </Reveal>
+        </div>
+      </section>
+
+      {/* GALLERY 1 */}
+      <section className="mx-auto max-w-7xl px-4 pb-20 sm:px-6 lg:px-8">
+        <Gallery images={gallery1} />
       </section>
 
       {/* WHY US */}
@@ -386,14 +398,22 @@ export default function Home() {
             <h2 className="text-3xl font-extrabold text-white sm:text-4xl">
               ¿Tu auto necesita atención? Escribinos ahora
             </h2>
-            <a
-              href={buildWhatsappLink(whatsappMessages.presupuesto)}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-6 inline-flex items-center gap-2 rounded-full bg-white px-8 py-4 text-base font-semibold text-brand-blue shadow-lg hover:bg-brand-silver-light"
-            >
-              <WhatsAppIcon size={20} /> Escribir por WhatsApp
-            </a>
+            <div className="mt-6 flex flex-wrap items-center justify-center gap-4">
+              <a
+                href={buildWhatsappLink(whatsappMessages.presupuesto)}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 rounded-full bg-white px-8 py-4 text-base font-semibold text-brand-blue shadow-lg hover:bg-brand-silver-light"
+              >
+                <WhatsAppIcon size={20} /> Escribir por WhatsApp
+              </a>
+              <a
+                href={`mailto:${siteConfig.insuranceEmail}?subject=${encodeURIComponent('Consulta sobre gestión de siniestro')}`}
+                className="inline-flex items-center gap-2 rounded-full border-2 border-white px-8 py-4 text-base font-semibold text-white hover:bg-white/10"
+              >
+                <Mail size={20} /> Consultá por tu seguro
+              </a>
+            </div>
             <div className="mt-8 flex flex-wrap justify-center gap-x-8 gap-y-3 text-sm text-white/80">
               <span>{siteConfig.phoneDisplay}</span>
               <span>{siteConfig.email}</span>

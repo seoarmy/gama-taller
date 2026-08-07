@@ -11,7 +11,7 @@ const features = [
   {
     icon: 'Users',
     title: 'Equipo especializado',
-    desc: 'Técnicos certificados por área: chapa, mecánica, electricidad y gomería.',
+    desc: 'Técnicos certificados por área: chapa, mecánica, electricidad y cerrajería vehicular.',
   },
   {
     icon: 'ShieldCheck',
@@ -21,7 +21,7 @@ const features = [
   {
     icon: 'Settings2',
     title: 'Equipamiento moderno',
-    desc: 'Diagnóstico computarizado, PDR, alineadora 3D y cabina de pintura al horno.',
+    desc: 'Diagnóstico computarizado, PDR, alineadora 3D y cabina de pintura presurizada.',
   },
   {
     icon: 'Clock',

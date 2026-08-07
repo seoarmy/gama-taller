@@ -1,7 +1,7 @@
 export const faqGlobal = [
   {
     q: '¿Qué servicios incluye la reparación integral?',
-    a: 'Chapa y pintura, mecánica general, electricidad del automóvil, limpieza de tapizados, reparación por granizo, gomería y alineación y balanceo, todo dentro del mismo taller en Marcos Sastre 4474.',
+    a: 'Chapa y pintura, mecánica general, electricidad del automóvil, limpieza de tapizados, reparación por granizo, cerrajería vehicular y alineación y balanceo, todo dentro del mismo taller en Marcos Sastre 4474.',
   },
   {
     q: '¿Trabajan con mi compañía de seguros?',
