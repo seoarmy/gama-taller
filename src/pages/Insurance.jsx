@@ -15,8 +15,8 @@ const steps = [
   },
   {
     icon: FileText,
-    title: 'Armamos el expediente completo',
-    desc: 'Reunimos denuncia, cédula, póliza y presupuesto de reparación en el formato que exige cada compañía de seguros.',
+    title: 'Te pedimos la documentación necesaria',
+    desc: 'Te indicamos qué necesitás presentar (denuncia, cédula, póliza) y armamos el expediente en el formato que exige cada compañía de seguros.',
   },
   {
     icon: Scale,
@@ -37,7 +37,7 @@ const steps = [
 
 const bullets = [
   'Asesoramos al cliente inmediatamente después del accidente',
-  'Gestionamos toda la documentación del siniestro',
+  'Te solicitamos la documentación necesaria y gestionamos el reclamo',
   'Tramitamos el reclamo ante la aseguradora',
   'Coordinamos la reparación completa del vehículo',
   'Trabajamos con todas las compañías de seguros',
@@ -70,7 +70,7 @@ export default function Insurance() {
     serviceType: 'Gestión de siniestros y reclamos de seguro automotor',
     name: `Gestión de siniestros — ${siteConfig.name}`,
     description:
-      'Gestión integral de siniestros automotores con todas las compañías de seguros: documentación, reclamo, reparación y respaldo legal especializado.',
+      'Gestión integral de siniestros automotores con todas las compañías de seguros: reclamo, reparación y respaldo legal especializado.',
     provider: {
       '@type': 'AutoRepair',
       name: siteConfig.name,
@@ -101,7 +101,7 @@ export default function Insurance() {
     <>
       <SEO
         title="Gestión de Siniestros y Reclamos de Seguro | GAMA Taller Integral"
-        description="Gestionamos tu siniestro automotor de principio a fin: documentación, reclamo ante la aseguradora, reparación completa y respaldo legal. Buenos Aires."
+        description="Gestionamos tu siniestro automotor de principio a fin: reclamo ante la aseguradora, reparación completa y respaldo legal. Buenos Aires."
         path="/seguros"
         jsonLd={[jsonLd, faqJsonLd]}
       />
@@ -114,7 +114,7 @@ export default function Insurance() {
               Gestionamos tu siniestro de principio a fin
             </h1>
             <p className="mx-auto mt-3 max-w-2xl text-white/70">
-              Después de un choque, granizo o cualquier siniestro, te hacés cargo de una sola cosa: avisarnos. Nosotros gestionamos la documentación, el reclamo ante tu aseguradora y la reparación completa del vehículo.
+              Después de un choque, granizo o cualquier siniestro, te hacés cargo de una sola cosa: avisarnos. Te solicitamos la documentación necesaria y gestionamos el reclamo ante tu aseguradora, más la reparación completa del vehículo.
             </p>
             <div className="mt-5 flex flex-wrap items-center justify-center gap-3">
               <a

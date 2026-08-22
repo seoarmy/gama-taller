@@ -54,7 +54,7 @@ const gallery2 = [
 
 const insuranceBullets = [
   'Asesoramos al cliente inmediatamente después del accidente',
-  'Gestionamos toda la documentación del siniestro',
+  'Te decimos qué documentación necesitás presentar',
   'Tramitamos el reclamo ante la aseguradora',
   'Coordinamos la reparación completa del vehículo',
   'Trabajamos con todas las compañías de seguros',
@@ -295,26 +295,29 @@ export default function Home() {
         <WorkCarousel images={workGallery} />
       </section>
 
-      {/* ABOUT GAMA */}
-      <section className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
+      {/* NOSOTROS */}
+      <section id="nosotros" className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
         <div className="grid items-center gap-12 lg:grid-cols-2">
           <Reveal>
             <div className="overflow-hidden rounded-3xl border border-brand-silver-light">
-              {/* TODO: reemplazar con foto real del cliente */}
+              {/* TODO: reemplazar con foto real de la fachada / interior del taller GAMA */}
               <img
                 src="https://images.unsplash.com/photo-1530046339160-ce3e530c7d2f?auto=format&fit=crop&w=1000&q=80"
-                alt="Mecánico trabajando en el taller GAMA"
+                alt="Interior del taller GAMA Taller Integral"
                 className="h-full w-full object-cover"
               />
             </div>
           </Reveal>
           <Reveal delay={0.1}>
-            <SectionBadge>Conocé GAMA</SectionBadge>
+            <SectionBadge>Nosotros</SectionBadge>
             <h2 className="mt-4 text-3xl font-extrabold text-brand-ink sm:text-4xl">
-              Centro integral con equipo y trato personalizado
+              Más de 23 años de trayectoria en Buenos Aires
             </h2>
             <p className="mt-4 text-brand-ink/60">
-              En GAMA Taller Integral combinamos equipamiento moderno —diagnóstico computarizado, cabina de pintura presurizada, alineadora 3D— con seguimiento cercano de cada vehículo que entra al taller. Cada trabajo se sigue de punta a punta con el mismo asesor.
+              GAMA Taller Integral acompaña a clientes de toda la Ciudad de Buenos Aires desde hace más de 23 años, reparando vehículos con el mismo compromiso desde el primer día. Esa trayectoria nos permitió sumar equipamiento moderno —diagnóstico computarizado, cabina de pintura presurizada, alineadora 3D— sin perder el trato cercano y personalizado con cada cliente.
+            </p>
+            <p className="mt-3 text-brand-ink/60">
+              Cada vehículo que entra al taller se sigue de punta a punta con el mismo asesor, desde el diagnóstico inicial hasta la entrega final.
             </p>
             <a
               href={buildWhatsappLink(whatsappMessages.asesor)}

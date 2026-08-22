@@ -17,17 +17,11 @@ export default function Navbar() {
   return (
     <header className="sticky top-0 z-50 bg-white/90 shadow-sm shadow-brand-ink/5 backdrop-blur-md">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
-        <Link to="/" className="flex items-center gap-2" onClick={() => setMobileOpen(false)}>
-          <span className="text-lg font-extrabold tracking-tight text-brand-ink">
-            GAMA <span className="text-brand-blue">Taller Integral</span>
-          </span>
+        <Link to="/" className="flex items-center" onClick={() => setMobileOpen(false)}>
+          <img src="/logo.png" alt="GAMA Taller Integral" className="h-10 w-auto sm:h-11" />
         </Link>
 
         <nav className="hidden items-center gap-7 lg:flex">
-          <NavLink to="/" end className={navLinkClass}>
-            Inicio
-          </NavLink>
-
           <div
             className="relative"
             onMouseEnter={() => setServicesOpen(true)}
@@ -63,12 +57,6 @@ export default function Navbar() {
         </nav>
 
         <div className="hidden items-center gap-3 lg:flex">
-          <Link
-            to="/servicios/chapa-y-pintura"
-            className="rounded-full border border-brand-blue px-4 py-2 text-sm font-semibold text-brand-blue transition-colors hover:bg-brand-blue hover:text-white"
-          >
-            Nuestros Servicios
-          </Link>
           <a
             href={buildWhatsappLink(whatsappMessages.presupuesto)}
             target="_blank"
@@ -92,10 +80,7 @@ export default function Navbar() {
       {mobileOpen && (
         <div className="border-t border-brand-silver-light bg-white px-4 pb-6 pt-2 lg:hidden">
           <nav className="flex flex-col gap-1">
-            <Link to="/" className="rounded-lg px-2 py-2 text-sm font-medium text-brand-ink/80" onClick={() => setMobileOpen(false)}>
-              Inicio
-            </Link>
-            <span className="px-2 pt-3 text-xs font-semibold uppercase tracking-wide text-brand-ink/40">
+            <span className="px-2 pt-1 text-xs font-semibold uppercase tracking-wide text-brand-ink/40">
               Servicios
             </span>
             {services.map((service) => (

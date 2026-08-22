@@ -12,7 +12,7 @@ export const services = [
     heroImage:
       'https://images.unsplash.com/photo-1632823469850-1b7b1e8b7e6f?auto=format&fit=crop&w=1600&q=80',
     intro:
-      'En nuestro sector de chapa y pintura trabajamos con cabina de pintado presurizada y bancada de enderezado por medición láser, lo que nos permite devolver la geometría original del chasis antes de aplicar cualquier pintura. No tapamos golpes: los corregimos desde la estructura.',
+      'En nuestro sector de Chapa y Pintura realizamos la reparación integral de la carrocería del vehículo. Trabajamos sobre golpes, abolladuras y daños ocasionados por choques, realizando el enderezado, reparación, alineación o reemplazo de las piezas que sean necesarias. Contamos con personal especializado para cada etapa del proceso, lo que garantiza un trabajo profesional en cada área. Luego preparamos cada superficie para el proceso de pintura, realizando la igualación del color para obtener el tono adecuado y lograr que la pieza reparada se integre con el resto del vehículo. Finalizamos con pintura, barnizado y pulido, cuidando cada detalle para conseguir una terminación uniforme, prolija y de excelente calidad.',
     process: [
       {
         title: 'Diagnóstico y medición de chasis',
@@ -34,10 +34,10 @@ export const services = [
     localSeo:
       'Atendemos siniestros de chapa y pintura de clientes de toda la Ciudad Autónoma de Buenos Aires que llegan derivados por su aseguradora o de forma particular a nuestro taller en Marcos Sastre 4474.',
     benefits: [
+      'Trabajamos con seguros a todo riesgo: la mayoría de nuestros clientes llega con el auto en destrucción total',
       'Igualación de color por espectrofotómetro, no a ojo',
       'Bancada de enderezado por medición láser',
       'Garantía escrita sobre el trabajo de pintura',
-      'Auto de reemplazo a coordinar según disponibilidad',
     ],
     faq: [
       {
@@ -50,7 +50,7 @@ export const services = [
       },
       {
         q: '¿Trabajan directo con la aseguradora para este tipo de daño?',
-        a: 'Sí, gestionamos la documentación y el peritaje con la compañía para que solo tengas que dejar el auto y coordinar el retiro.',
+        a: 'Sí, te solicitamos la documentación necesaria y gestionamos el peritaje con la compañía para que solo tengas que dejar el auto y coordinar el retiro.',
       },
     ],
   },
@@ -66,7 +66,7 @@ export const services = [
     heroImage:
       'https://images.unsplash.com/photo-1487754180451-c456f719a1fc?auto=format&fit=crop&w=1600&q=80',
     intro:
-      'El sector de mecánica general de GAMA trabaja con escáner multimarca para leer las centralitas de motor, ABS y airbag antes de tocar una sola pieza. Así evitamos cambiar componentes que funcionan bien y vamos directo a la causa del problema. También contamos con lubricentro propio para cambio de aceite y filtros según el kilometraje de cada vehículo.',
+      'En nuestro sector de Mecánica General realizamos el diagnóstico, mantenimiento y reparación integral del vehículo. Trabajamos sobre motores, distribución, frenos, suspensión, tren delantero y trasero, dirección, embrague, transmisión y sistemas de refrigeración, entre otros componentes. Realizamos tanto mantenimientos preventivos y services programados como reparaciones mecánicas de distinta complejidad. Cada trabajo comienza con una revisión y diagnóstico para determinar correctamente el origen de la falla y realizar únicamente las reparaciones necesarias. Contamos con personal especializado y equipamiento de diagnóstico, buscando que cada vehículo recupere su correcto funcionamiento, seguridad y rendimiento, con un trabajo profesional y confiable.',
     process: [
       {
         title: 'Escaneo de fallas con equipo multimarca',
@@ -88,6 +88,7 @@ export const services = [
     localSeo:
       'Recibimos vehículos para service y mecánica general de clientes de toda la Ciudad de Buenos Aires, con turno previo o de manera espontánea según disponibilidad del taller.',
     benefits: [
+      'Trabajamos con seguros a todo riesgo: la mayoría de nuestros clientes llega con el auto en destrucción total',
       'Escáner multimarca para motor, ABS y airbag',
       'Lubricentro propio: cambio de aceite y filtros',
       'Presupuesto detallado antes de iniciar cualquier trabajo',
@@ -147,6 +148,7 @@ export const services = [
     localSeo:
       'Diagnosticamos fallas eléctricas intermitentes de autos de toda Buenos Aires que ya pasaron por otro taller sin solución definitiva, con equipo de medición dedicado a electrónica automotriz.',
     benefits: [
+      'Trabajamos con seguros a todo riesgo: la mayoría de nuestros clientes llega con el auto en destrucción total',
       'Osciloscopio para medir señales reales, no solo leer códigos',
       'Reparación de arnés en vez de reemplazo directo del mazo completo',
       'Diagnóstico de fallas intermitentes con protocolo de reproducción',
@@ -201,6 +203,7 @@ export const services = [
     localSeo:
       'Servicio de limpieza de tapizados solicitado frecuentemente por clientes de toda Buenos Aires después de reparaciones por granizo o inundación parcial del habitáculo.',
     benefits: [
+      'Trabajamos con seguros a todo riesgo: la mayoría de nuestros clientes llega con el auto en destrucción total',
       'Equipo de inyección-extracción, no lavado con paño húmedo',
       'Tratamiento específico según tipo de mancha',
       'Secado con aire forzado, sin dejar humedad residual',
@@ -255,6 +258,7 @@ export const services = [
     localSeo:
       'Después de granizadas en Buenos Aires, atendemos alto volumen de vehículos de toda la ciudad derivados directamente por las aseguradoras para reparación por PDR.',
     benefits: [
+      'Trabajamos con seguros a todo riesgo: la mayoría de nuestros clientes llega con el auto en destrucción total',
       'Técnica PDR: conserva la pintura original de fábrica',
       'Tiempos de reparación más cortos que chapa y pintura tradicional',
       'Gestión completa del siniestro con la aseguradora',
@@ -309,6 +313,7 @@ export const services = [
     localSeo:
       'Atendemos aperturas de emergencia y copiado de llaves de autos de toda la Ciudad Autónoma de Buenos Aires, tanto en el taller de Marcos Sastre 4474 como a domicilio según el caso.',
     benefits: [
+      'Trabajamos con seguros a todo riesgo: la mayoría de nuestros clientes llega con el auto en destrucción total',
       'Apertura de emergencia sin dañar cerradura ni burlete',
       'Programación de llaves con chip sin pasar por el concesionario',
       'Extracción de llaves rotas dentro del bombín',
@@ -363,6 +368,7 @@ export const services = [
     localSeo:
       'Muchos clientes de Buenos Aires llegan a alineación y balanceo después de una reparación de suspensión o un cambio de neumáticos, sin salir del taller de Marcos Sastre 4474.',
     benefits: [
+      'Trabajamos con seguros a todo riesgo: la mayoría de nuestros clientes llega con el auto en destrucción total',
       'Alineadora 3D contra valor exacto de fábrica',
       'Corrección de tiro al volante y desgaste irregular',
       'Ajuste de tren delantero y trasero',

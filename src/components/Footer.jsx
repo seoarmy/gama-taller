@@ -18,9 +18,9 @@ export default function Footer() {
     <footer className="border-t border-brand-silver-light bg-brand-dark text-white">
       <div className="mx-auto grid max-w-7xl gap-10 px-4 py-14 sm:px-6 lg:grid-cols-4 lg:px-8">
         <div>
-          <span className="text-lg font-extrabold">
-            GAMA <span className="text-brand-blue-accent">Taller Integral</span>
-          </span>
+          <div className="inline-block rounded-xl bg-white p-3">
+            <img src="/logo.png" alt="GAMA Taller Integral" className="h-10 w-auto" />
+          </div>
           <p className="mt-3 text-sm text-white/60">{siteConfig.slogan}</p>
           <a
             href={siteConfig.instagramUrl}
@@ -56,6 +56,9 @@ export default function Footer() {
             </li>
             <li>
               <Link to="/opiniones" className="hover:text-white">Opiniones</Link>
+            </li>
+            <li>
+              <a href="/#nosotros" className="hover:text-white">Nosotros</a>
             </li>
             <li>
               <a href="/#ubicacion" className="hover:text-white">Ubicación</a>
